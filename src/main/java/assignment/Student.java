@@ -13,7 +13,7 @@ class GPA{
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
     String name;
     String gradeLevel;
-    double gpa;
+    double gpa1;
 
     GPA(){
         Scanner sc = new Scanner(System.in);
@@ -22,17 +22,17 @@ class GPA{
         LOGGER.info("Enter Student grade: ");
         gradeLevel = sc.nextLine();
         LOGGER.info("Enter GPA: ");
-        gpa = sc.nextDouble();
+        gpa1 = sc.nextDouble();
         
     }
     String display(){
-        return name+" has a "+gpa+" GPA.";
+        return name+" has a "+gpa1+" GPA.";
     }
     void update(){
         Scanner sc = new Scanner(System.in);
         LOGGER.info("Enter new GPA: ");
         double newGPA = sc.nextDouble();        
-        gpa = newGPA;
+        gpa1 = newGPA;
         LOGGER.info("Update successful.");
         LOGGER.info(display());
     }
@@ -65,7 +65,7 @@ public class Student{
             student1.checkrecord();
             }
             else if(choice =='n'){
-                LOGGER.info("Canceled. Your current GPA is "+student1.gpa+".");
+                LOGGER.info("Canceled. Your current GPA is "+student1.gpa1+".");
             }
         }
         else{

@@ -47,7 +47,6 @@ class GPA{
         }
         else{
             LOGGER.info("Invalid username, try again...");
-            continue;
         }
     }
     }

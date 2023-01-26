@@ -65,7 +65,7 @@ public class Student{
             student1.checkrecord();
             }
             else if(choice =='n'){
-                LOGGER.info("Canceled. Your current GPA is "+student1.gpa1+".");
+                LOGGER.info("Canceled. Your current GPA is "+Double.toString(student1.gpa1)+".");
             }
         }
         else{

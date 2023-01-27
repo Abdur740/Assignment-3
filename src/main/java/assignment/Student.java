@@ -34,7 +34,8 @@ class GPA{
         double newGPA = sc.nextDouble();        
         gpa1 = newGPA;
         LOGGER.info("Update successful.");
-        LOGGER.info(display());
+        String display = display();
+        LOGGER.info(display);
     }
     void checkrecord(){
         Scanner sc =  new Scanner(System.in);

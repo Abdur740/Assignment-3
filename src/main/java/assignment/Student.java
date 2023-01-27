@@ -60,7 +60,7 @@ public class Student{
         LOGGER.info("Do you want to update your GPA (y/n): ");
         char choice;
         choice = sc.next().charAt(0);
-        String str = "Canceled. Your current GPA is "+studentresult+".";
+        String str = "Canceled. Your current GPA is "+student1.gpa1;
         if(choice== 'y' || choice =='n'){
             if(choice =='y'){
             student1.checkrecord();

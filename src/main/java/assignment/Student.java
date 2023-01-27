@@ -60,12 +60,13 @@ public class Student{
         LOGGER.info("Do you want to update your GPA (y/n): ");
         char choice;
         choice = sc.next().charAt(0);
+        double studentresult = student1.gpa1;
         if(choice== 'y' || choice =='n'){
             if(choice =='y'){
             student1.checkrecord();
             }
             else if(choice =='n'){
-                LOGGER.info("Canceled. Your current GPA is "+Double.toString(student1.gpa1)+".");
+                LOGGER.info("Canceled. Your current GPA is "+studentresult+".");
             }
         }
         else{
